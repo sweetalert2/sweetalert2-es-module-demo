@@ -1,0 +1,17 @@
+# Demonstration of using [SweetAlert2](https://github.com/sweetalert2/sweetalert2) with [ECMAScript modules](https://jakearchibald.com/2017/es-modules-in-browsers/)
+
+[![Build Status](https://github.com/sweetalert2/sweetalert2-es-module-demo/workflows/build/badge.svg)](https://github.com/sweetalert2/sweetalert2-es-module-demo/actions)
+[![Greenkeeper badge](https://badges.greenkeeper.io/sweetalert2/sweetalert2-es-module-demo.svg)](https://greenkeeper.io/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f4a5ac2c-af3e-4512-b5f9-7f88359be571/deploy-status)](https://app.netlify.com/sites/sweetalert2-es-module-demo/deploys)
+
+```html
+<script type="module">
+  import Swal from './sweetalert2/src/sweetalert2.js'
+
+  await Swal.fire('Hi from ES moule!')
+</script>
+```
+
+---
+
+Live result: https://sweetalert2-es-module-demo.netlify.com/
