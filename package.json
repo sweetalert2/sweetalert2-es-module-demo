@@ -8,6 +8,7 @@
     "sweetalert2": "^9.5.3"
   },
   "scripts": {
+    "build": "cp --recursive node_modules/* .",
     "serve": "http-server -p 5500",
     "test": "jest --env=node",
     "update_screenshots": "jest -u --env=node"
