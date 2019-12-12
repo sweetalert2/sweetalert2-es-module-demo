@@ -1,0 +1,15 @@
+{
+  "name": "sweetalert2-es-module-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@sweetalert2/themes": "^3.1.0",
+    "sweetalert2": "^9.5.3"
+  },
+  "scripts": {
+    "serve": "http-server -p 5500",
+    "test": "jest --env=node",
+    "update_screenshots": "jest -u --env=node"
+  }
+}

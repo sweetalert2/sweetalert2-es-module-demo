@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SweetAlert2 + ECMAScript modules</title>
+  <link rel="stylesheet" href="./node_modules/@sweetalert2/themes/dark/dark.css">
+</head>
+<body>
+  <script type="module">
+    import Swal from './node_modules/sweetalert2/src/sweetalert2.js'
+    async function sayHi() {
+      await Swal.fire('Hi from ES moule!', `SweetAlert2 version: ${Swal.version}`)
+
+      const { value: name } = await Swal.fire({
+        text: 'What is your name?',
+        input: 'text'
+      })
+
+      const { value: location } = await Swal.fire({
+        html: 'Where are you from?',
+        input: 'text'
+      })
+
+      await Swal.fire(`Hi ${name} from ${location}!`, '', 'success')
+    }
+
+    sayHi()
+  </script>
+</body>
+</html>
