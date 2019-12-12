@@ -1,15 +1,19 @@
+<!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SweetAlert2 + ECMAScript modules</title>
   <link rel="stylesheet" href="./@sweetalert2/themes/dark/dark.css">
 </head>
+
 <body>
   <script type="module">
     import Swal from './sweetalert2/src/sweetalert2.js'
+
     async function sayHi() {
-      await Swal.fire('Hi from ES moule!', `SweetAlert2 version: ${Swal.version}`)
+      await Swal.fire('Hi from ES module!', `SweetAlert2 version: ${Swal.version}`)
 
       const { value: name } = await Swal.fire({
         text: 'What is your name?',

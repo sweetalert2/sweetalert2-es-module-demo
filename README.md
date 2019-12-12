@@ -7,8 +7,7 @@
 ```html
 <script type="module">
   import Swal from './sweetalert2/src/sweetalert2.js'
-
-  Swal.fire('Hi from ES moule!')
+  Swal.fire('Hi from ES module!')
 </script>
 ```
 
