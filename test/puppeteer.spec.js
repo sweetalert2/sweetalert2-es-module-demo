@@ -12,7 +12,7 @@ describe('jest-image-snapshot + puppeteer = <3', () => {
       failureThreshold: '0.03',
       failureThresholdType: 'percent'
     }
-    await page.waitFor(300)
+    await page.waitFor(500)
     const image = await page.screenshot()
     expect(image).toMatchImageSnapshot(config)
   }
