@@ -3,6 +3,8 @@ const puppeteer = require('puppeteer')
 
 expect.extend({ toMatchImageSnapshot })
 
+jest.setTimeout(10000)
+
 describe('jest-image-snapshot + puppeteer = <3', () => {
   let browser
   let page
