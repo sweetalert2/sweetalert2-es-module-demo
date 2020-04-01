@@ -13,4 +13,4 @@
 
 ---
 
-Live demo: https://sweetalert2-es-module-demo.netlify.com/
+Live demo: https://sweetalert2-es-module-demo.netlify.app/
