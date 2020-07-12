@@ -9,7 +9,7 @@
   "devDependencies": {
     "jest": "^26.0.0",
     "jest-image-snapshot": "^4.0.0",
-    "puppeteer": "^3.0.0",
+    "puppeteer": "^5.0.0",
     "serve": "^11.0.0"
   },
   "scripts": {
