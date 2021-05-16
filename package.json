@@ -3,19 +3,14 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "@sweetalert2/themes": "^4.0.0",
-    "sweetalert2": "^10.0.0"
+    "@sweetalert2/themes": "^5.0.0",
+    "sweetalert2": "^11.0.0"
   },
   "devDependencies": {
-    "jest": "^26.0.0",
-    "jest-image-snapshot": "^4.0.0",
-    "puppeteer": "^5.0.0",
     "serve": "^11.0.0"
   },
   "scripts": {
     "build": "cp --recursive node_modules/sweetalert2 node_modules/@sweetalert2 .",
-    "serve": "serve -l 5500",
-    "test": "jest --env=node",
-    "update_screenshots": "jest -u --env=node"
+    "serve": "serve -l 5500"
   }
 }
